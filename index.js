@@ -53,9 +53,21 @@ console.log(addingStr('new! adddd'))
 
 // use .every to return a boolean if every element 
 // in Array is odd or not
-
 const arrr = [1,3,5,7,9];
 const ans = arrr.every(
     (num) => num % 2 != 0
 )
 console.log(ans)
+
+//remove the given element from an array
+const arrayNum = [1,2,3,4,5,6];
+const removeNum = (num, arr) => {
+    let result = [];
+    for(let i = 0; i < arr.length; i++){
+        if(num != arr[i]){
+            result.push(arr[i])
+        }
+    }
+    return result
+}
+console.log(removeNum(4, arrayNum));
