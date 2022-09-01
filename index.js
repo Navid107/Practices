@@ -50,3 +50,12 @@ const addingStr = (str) => {
     }
 }
 console.log(addingStr('new! adddd'))
+
+// use .every to return a boolean if every element 
+// in Array is odd or not
+
+const arrr = [1,3,5,7,9];
+const ans = arrr.every(
+    (num) => num % 2 != 0
+)
+console.log(ans)
