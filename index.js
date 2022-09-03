@@ -71,3 +71,10 @@ const removeNum = (num, arr) => {
     return result
 }
 console.log(removeNum(4, arrayNum));
+
+// use reduce and add all elenemts in line 63 (arrayNum)
+const redu = arrayNum.reduce((sum, value) => (
+     sum + value
+))
+console.log(redu)
+
